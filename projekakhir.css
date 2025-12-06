@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: #00bfff;
+}
+
+.teks {
+  height: 100vh;
+  background: url("https://asset.kompas.com/crops/vU5byo_tLt0zKnHydmi40O-L8DA=/5x65:730x548/1200x800/data/photo/2020/05/18/5ec27908adb29.jpg")
+    no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.teks::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.teks_con {
+  position: relative;
+  z-index: 1;
+}
+
+.teks_con h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.teks_con h2 {
+  font-size: 70px;
+  font-weight: 800;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 40px;
+  background-color: white;
+  color: #000;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00bfff;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 191, 255, 0.5);
+}
+
+/* bagian destination */
+
+ **{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.Destination {
+  padding: 100px 80px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.Destination h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.gambargng {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.gambargng > div {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: 0.3s;
+  background: #fff;
+}
+
+.gambargng > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gambargng > div:hover img {
+  transform: scale(1.05);
+}
+
+.gambargng > div div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.6));
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.gambargng h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.detail-btn {
+  display: inline-block;
+  background: white;
+  color: #0080ff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.detail-btn:hover {
+  background: #0080ff;
+  color: white;
+}
+
+.gambargng > div:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== Bagian Activities ===== */
+.Activities {
+  padding: 70px 0;
+  background: linear-gradient(180deg, #f9fafc 0%, #edf4f7 100%);
+  text-align: center;
+  border-top: 4px solid #b7d8e3;
+}
+
+.Activities h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1b4d63;
+  margin-bottom: 50px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.activities {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  padding: 0 30px;
+}
+
+.activities div {
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 310px;
+  transition: all 0.3s ease;
+  border: 1px solid #e2eef2;
+}
+
+.activities div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.activities img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 3px solid #a4d2df;
+}
+
+.activities h3 {
+  font-size: 20px;
+  color: #1c3f4a;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.activities p {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0 25px;
+}
+
+.activity-link {
+  color: #1d8ca1;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.activity-link:hover {
+  color: #106879;
+  text-decoration: underline;
+}
+
+/* Bagian About NTT */
+.AboutNTT {
+  background: linear-gradient(to bottom, #f8fafc, #e8f0f7); /* warna lembut biru-putih */
+  padding: 80px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+.about .image {
+  flex: 1 1 45%;
+}
+
+.about .image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.about .image img:hover {
+  transform: scale(1.03);
+}
+
+/* Teks */
+.about-text {
+  flex: 1 1 50%;
+  color: #333;
+}
+
+.about-text h2 {
+  font-size: 2.2em;
+  color: #004c6d;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-text p {
+  font-size: 1.05em;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #555;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Tombol */
+.about-btn {
+  display: inline-block;
+  background-color: #6cb4b8; /* biru toska lembut */
+  color: white;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.about-btn:hover {
+  background-color: #5aa3a7;
+  transform: scale(1.05);
+}
+
+.contact {
+  background-color: #f7f9fa;
+  padding: 60px 10%;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Form kiri */
+.form-section {
+  flex: 1 1 45%;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-section h2 {
+  margin-bottom: 15px;
+  color: #004c6d;
+  font-size: 1.5em;
+}
+
+.form-section label {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.form-section input,
+.form-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccd4db;
+  border-radius: 6px;
+  background: #f8f9fa;
+  font-size: 0.95em;
+}
+
+.form-section button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #6cb4b8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95em;
+}
+
+.form-section button:hover {
+  background-color: #5aa3a7;
+}
+
+/* Sosial kanan */
+.social-section {
+  flex: 1 1 45%;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.social-section h2 {
+  color: #004c6d;
+  margin-bottom: 15px;
+}
+
+.social p {
+  margin: 10px 0;
+  color: #555;
+}
+
+
+
+
+
+
+
